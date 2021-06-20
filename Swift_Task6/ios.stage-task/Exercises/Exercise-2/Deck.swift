@@ -62,6 +62,8 @@ extension Deck {
 
     public mutating func initialCardsDealForPlayers(players: [Player]) {
         shuffle()
+        defineTrump()
+        
         let handsSetSize = 6
         
         for i in 0..<players.count{
